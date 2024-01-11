@@ -23,7 +23,7 @@
 ### Test the generated script
  - bash ./target/universal/stage/bin/hello-world
 
-### The usage below show some useful option already available into generated script, like :
+### The usage below show some useful option already available into generated script, like
  - verbose and debug options
  - a multi main class support
  - selection of java version to use
