@@ -1,4 +1,3 @@
-
 // The simplest possible sbt build file is just one line:
 
 scalaVersion := "2.13.12"
@@ -75,3 +74,7 @@ libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % 
 
 // To learn more about multi-project builds, head over to the official sbt
 // documentation at http://www.scala-sbt.org/documentation.html
+enablePlugins(JavaAppPackaging)
+enablePlugins(DockerPlugin)
+dockerBaseImage := "adoptopenjdk:11.0.7_10-jre-hotspot"
+daemonUser in Docker := "daemon"
